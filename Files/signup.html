@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .container{
+            height: 100%;
+            align-content: center;
+            margin-top: 120px;
+        }
+
+        .card{
+            height: 410px;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 400px;
+            background-color: #B8E0D2;
+        }
+
+        .card-header h3{
+            color: white;
+        }
+
+        .social_icon{
+            position: absolute;
+            right: 20px;
+            top: -45px;
+        }
+
+        .input-group-prepend span{
+            width: 50px;
+            background-color: #FFC312;
+            color: black;
+            border:0 !important;
+        }
+
+        input:focus{
+            outline: 0 0 0 0  !important;
+            box-shadow: 0 0 0 0 !important;
+        }
+
+        .remember{
+            color: white;
+        }
+
+        .remember input
+        {
+            width: 20px;
+            height: 20px;
+            margin-left: 15px;
+            margin-right: 5px;
+        }
+
+        .login_btn{
+            color: black;
+            background-color: #FFC312;
+            width: 100px;
+        }
+
+        .login_btn:hover{
+            color: black;
+            background-color: white;
+        }
+
+        .links{
+            color: white;
+        }
+
+        .links a{
+            margin-left: 4px;
+        }
+    
+    </style>
+</head>
+
+
+<body>
+
+<div>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-static-top sticky-top" style="background-color: #B8E0D2; opacity: 1">
+                <a class="navbar-brand" href="#" style = "color :white;"><img src= "images/logo_final.png" style="width : 60%; height :auto"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a class="nav-link" style="color: white" href="#" > <i class="fa fa-sign-in"></i> Sign up</a></li>
+                    <li class="nav-item"><a class="nav-link"style="color: white" href="#"> <i class = "fa fa-user"></i> Sign in </a></li>
+                </ul>
+            </div>
+        </nav>
+   
+    <div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign Up</h3>
+				<div class="d-flex justify-content-end social_icon">
+				</div>
+			</div>
+			<div class="card-body">
+				<form>
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class = "fa fa-user-o"></i></span>
+						</div>
+						<input type="text" class="form-control" id="name" placeholder="full name">
+					</div>
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class = "fa fa-envelope"></i></span>
+						</div>
+						<input type="email" class="form-control" id="mail" placeholder="email">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class = "fa fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" id="uname" placeholder="username">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" id="pwd" placeholder="password">
+					</div>
+					<div class="form-group" >
+						<input type="submit" id="submit" value="Sign Up" class="btn float-right login_btn" >
+					</div>
+				</form>
+            </div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links" >
+					Have an account?<a href="signin.html" style="margin-bottom: 20px;">Sign In</a>
+				</div>
+            </div>
+            <div id="form-error"></div>
+		</div>
+	</div>
+</div>       
+</div>
+
+<footer class="page-footer font-small blue-grey lighten-5">
+        <div style="background-color:#BDBDBD;">
+        <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Get connected with us on social networks!</h6>
+              </div>
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+                <a class="fb-ic">
+                  <i class="fa fa-facebook white-text mr-4"> </i>
+                </a>
+                <a class="tw-ic">
+                  <i class="fa fa-twitter white-text mr-4"> </i>
+                </a>
+                <a class="gplus-ic">
+                  <i class="fa fa-pinterest white-text mr-4"> </i>
+                </a>
+                <a class="li-ic">
+                  <i class="fa fa-linkedin white-text mr-4"> </i>
+                </a>              <a class="ins-ic">
+                  <i class="fa fa-instagram white-text"> </i>
+                </a>
+              </div>
+              </div>
+          </div>
+        </div>
+      </footer >
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script type="text/javascript">
+          
+    $("form").submit(function(e) {
+        
+        var error = "";
+        
+        if ($("#name").val() == "") {
+            
+            error += "The fullname field is required.<br>"
+            
+        }
+        
+        if ($("#uname").val() == "") {
+            
+            error += "The username field is required.<br>"
+            
+        }
+
+        if ($("#pwd").val() == "") {
+            
+            error += "The password field is required.<br>"
+            
+        }
+
+        if ($("#mail").val() == "") {
+            
+            error += "The email field is required.<br>"
+            
+        }
+        
+        if (error != "") {
+            
+           $("#form-error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+            
+            return false;
+            
+        } else {
+            
+            return true;
+            
+        }
+        
+    })
+    
+</script>
+</html>
